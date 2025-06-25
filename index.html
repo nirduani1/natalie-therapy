@@ -1,24 +1,88 @@
-<!DOCTYPE html>
-<html lang="he">
-<head>
-  <meta charset="UTF-8">
-  <title>נטלי בנבניסטי - קליניקה הוליסטית</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <div class="hero">
-    <div class="overlay">
-      <h1>נטלי בנבניסטי</h1>
-      <h2 class="english">BACH THERAPY</h2>
-      <p class="tagline">טיפול רגשי הוליסטי בגישה אישית<br>מוסמכת בפרחי באך</p>
-    </div>
-  </div>
+body {
+  direction: rtl;
+  background-color: #fbe4d4; /* צבע טיפה יותר מודגש מהקודם */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #6b3c1d;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 8px,
+    rgba(255, 255, 255, 0.08) 8px,
+    rgba(255, 255, 255, 0.08) 16px
+  );
+}
 
-  <div class="content">
-    <p>📍 ברודצקי 36, תל אביב<br>בניין אביב – קליניקה מס׳ 7</p>
-    <p>📞 <a href="tel:0504770000">050-4770000</a></p>
-    <p>📩 <a href="mailto:natalie2898@gmail.com">natalie2898@gmail.com</a></p>
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    <p class="about">
-      בקליניקה שלי אני מעניקה טיפול רגשי בגישה הוליסטית – תוך שילוב של פרחי באך, שיחה וכלים נוספים שמחב
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.location, .phone, .email, .description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+a {
+  color: #6b3c1d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp a {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp a:hover {
+  background-color: #1ebe5b;
+}
+
+/* מובייל */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
