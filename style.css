@@ -1,0 +1,101 @@
+/* רקע כללי */
+body {
+  direction: rtl;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4e2c1e;
+  background-color: #fffaf7;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b6b061f5?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.85);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.overlay h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.overlay h2 {
+  font-size: 1.5em;
+  color: #7b4e3b;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #5e3e2f;
+}
+
+/* תוכן */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+a {
+  color: #4e2c1e;
+  text-decoration: none;
+}
+
+.about {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+/* כפתור וואטסאפ */
+.cta a {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #25d366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #1ebe5b;
+}
+
+/* רספונסיביות */
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 2em;
+  }
+
+  .overlay h2 {
+    font-size: 1.2em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+}
