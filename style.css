@@ -1,4 +1,4 @@
-/* רקע כללי */
+/* עיצוב כללי */
 body {
   direction: rtl;
   margin: 0;
@@ -7,12 +7,12 @@ body {
   background-color: #fffaf7;
 }
 
-/* Hero section */
+/* כותרת עם תמונה */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b6b061f5?auto=format&fit=crop&w=1200&q=80');
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 55vh;
   position: relative;
 }
 
@@ -33,19 +33,24 @@ body {
   margin: 0;
 }
 
-.overlay h2 {
-  font-size: 1.5em;
-  color: #7b4e3b;
-  margin: 10px 0;
+.overlay h2.english {
+  font-size: 2em;
+  font-weight: bold;
+  color: #6b3e2e;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .tagline {
   font-size: 1.2em;
   color: #5e3e2f;
+  margin-top: 15px;
 }
 
-/* תוכן */
+/* תוכן תחתון */
 .content {
+  background-color: #fffaf7;
   max-width: 600px;
   margin: 40px auto;
   padding: 0 20px;
@@ -68,31 +73,14 @@ a {
   font-weight: 400;
 }
 
-/* כפתור וואטסאפ */
-.cta a {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #25d366;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-size: 1em;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta a:hover {
-  background-color: #1ebe5b;
-}
-
 /* רספונסיביות */
 @media (max-width: 600px) {
   .overlay h1 {
     font-size: 2em;
   }
 
-  .overlay h2 {
-    font-size: 1.2em;
+  .overlay h2.english {
+    font-size: 1.5em;
   }
 
   .tagline {
