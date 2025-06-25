@@ -1,94 +1,50 @@
 body {
-  direction: rtl;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f0e7;
-  color: #4d342c;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background-color: #fdf6f1;
+  color: #5c3b28;
+}
+
+.header {
   text-align: center;
+  padding: 80px 20px 40px;
+  background: url('leaf.png') no-repeat center top;
+  background-size: 300px auto;
 }
 
-.hero {
-  background-color: #b38b6d;
-  padding: 50px 20px;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 2.8em;
-  font-family: 'Brush Script MT', cursive;
+h1 {
+  font-size: 40px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.quote {
-  font-size: 1.3em;
-  font-weight: 300;
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.logo-section {
-  padding: 40px 20px 20px;
-}
-
-.logo {
-  max-width: 100px;
-  margin-bottom: 10px;
-}
-
-.logo-section h2 {
-  font-size: 1.5em;
-  letter-spacing: 2px;
-  margin: 10px 0 5px;
-}
-
-.subtitle {
-  font-size: 1em;
+.description {
+  font-size: 20px;
   line-height: 1.6;
 }
 
-.contact {
-  padding: 30px 20px;
-  background-color: #fff7f2;
+.section {
+  background-color: #fef9f5;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
-.contact p {
-  font-size: 1.1em;
-  margin: 10px 0;
-}
-
-a {
-  color: #4d342c;
-  text-decoration: none;
-}
-
-.whatsapp {
+a.whatsapp-link {
   display: inline-block;
-  margin-top: 25px;
-  background-color: #25d366;
-  color: white;
-  padding: 12px 22px;
-  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp:hover {
-  background-color: #1ebe5b;
-}
-
-/* רספונסיביות */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2.2em;
-  }
-
-  .quote {
-    font-size: 1em;
-  }
-
-  .logo-section h2 {
-    font-size: 1.2em;
-  }
-
-  .subtitle, .contact p {
-    font-size: 1em;
-  }
+  color: #ffffff;
+  background-color: #25d366;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
