@@ -2,11 +2,24 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   direction: rtl;
-  background-image: url('https://raw.githubusercontent.com/nirduani1/natalie-therapy/main/background-flowers.jpg.png');
+  background-image: url('background-flowers.jpg.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   color: #f9f5f1;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* שכבת הכהייה */
+  z-index: -1;
 }
 
 .header {
@@ -32,12 +45,14 @@ h1 {
   font-size: 44px;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #fff5eb;
 }
 
 h2 {
   font-size: 30px;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #fff5eb;
 }
 
 .description {
